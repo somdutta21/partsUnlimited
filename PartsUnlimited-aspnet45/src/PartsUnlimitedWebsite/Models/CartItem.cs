@@ -5,8 +5,11 @@ namespace PartsUnlimited.Models
 {
     public class CartItem : ILineItem
     {
+        private int cartItemId;
+
+        //somnath is here#
         [Key]
-        public int CartItemId { get; set; }
+        public int CartItemId { get => cartItemId; set => cartItemId = value; }
 
         [Required]
         public string CartId { get; set; }
